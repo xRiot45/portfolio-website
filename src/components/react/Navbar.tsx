@@ -44,23 +44,6 @@ export default function Navbar() {
                     ))}
                 </nav>
 
-                <div className="hidden items-center gap-3 md:flex">
-                    <a
-                        href={profile.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-body-sm-strong flex h-7 items-center rounded-sm border border-hairline px-2 text-ink transition-colors hover:bg-canvas-soft"
-                    >
-                        GitHub
-                    </a>
-                    <a
-                        href="#contact"
-                        className="text-body-sm-strong flex h-7 items-center rounded-sm bg-primary px-2 text-on-primary transition-opacity hover:opacity-90"
-                    >
-                        Contact
-                    </a>
-                </div>
-
                 <button
                     type="button"
                     aria-label={open ? "Close menu" : "Open menu"}
@@ -85,23 +68,6 @@ export default function Navbar() {
                                 {link.label}
                             </a>
                         ))}
-                        <div className="mt-4 flex flex-col gap-3 border-t border-hairline pt-4">
-                            <a
-                                href={profile.github}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="text-button-md flex h-10 items-center justify-center rounded-sm border border-hairline text-ink"
-                            >
-                                GitHub
-                            </a>
-                            <a
-                                href="#contact"
-                                onClick={() => setOpen(false)}
-                                className="text-button-md flex h-10 items-center justify-center rounded-sm bg-primary text-on-primary"
-                            >
-                                Contact
-                            </a>
-                        </div>
                     </nav>
                 </div>
             )}
