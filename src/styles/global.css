@@ -145,6 +145,14 @@
             transition-duration: 0.001ms !important;
             scroll-behavior: auto !important;
         }
+
+        /* Keep decorative marquee scrolling even for reduced-motion users */
+        .animate-marquee {
+            animation: var(--animate-marquee) !important;
+        }
+        .animate-marquee-reverse {
+            animation: var(--animate-marquee-reverse) !important;
+        }
     }
 }
 

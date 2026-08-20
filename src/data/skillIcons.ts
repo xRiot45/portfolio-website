@@ -32,9 +32,9 @@ export const skillIcon: Record<string, string> = {
     // Backend & data
     "REST API design": "mdi:api",
     MySQL: "logos:mysql",
-    PostgreSQL: "logos:postgresql",
-    TypeORM: "mdi:database-cog-outline",
-    "Sequelize ORM": "mdi:database-search-outline",
+    PostgreSQL: "devicon:postgresql",
+    TypeORM: "logos:typeorm",
+    "Sequelize ORM": "material-icon-theme:sequelize",
     "Modular Monolith Architecture": "mdi:cube-outline",
 
     // Quality
@@ -44,8 +44,8 @@ export const skillIcon: Record<string, string> = {
     Chai: "logos:chai",
     ESLint: "logos:eslint",
     Prettier: "logos:prettier",
-    Husky: "mdi:dog",
-    Commitlint: "mdi:git-commit",
+    Husky: "file-icons:husky",
+    Commitlint: "material-icon-theme:commitlint",
     Playwright: "logos:playwright",
 
     // Tooling
@@ -53,7 +53,7 @@ export const skillIcon: Record<string, string> = {
     GitHub: "logos:github-icon",
     Docker: "logos:docker-icon",
     Vercel: "logos:vercel",
-    "Cloudflare R2": "logos:cloudflare",
+    "Cloudflare R2": "devicon:cloudflare",
     "CI/CD": "mdi:truck-fast",
     Linux: "logos:linux-tux",
     Postman: "logos:postman",
