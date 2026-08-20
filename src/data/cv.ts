@@ -6,6 +6,8 @@ import goparkirThumb from "../assets/projects/goparkir.webp";
 import elysiaJsCliThumb from "../assets/projects/elysia-js-cli.webp";
 import rumahkodingkuThumb from "../assets/projects/rumahkodingku.webp";
 import nestjsModularMonolithStarterKitThumb from "../assets/projects/nestjs-modular-monolith.webp";
+import tradeJournalBackend from "../assets/projects/trade-journal-backend.webp";
+import tradeJournalFrontend from "../assets/projects/trade-journal-frontend.webp";
 
 export type SkillGroup = {
     eyebrow: string;
@@ -208,6 +210,18 @@ export const projects: ProjectItem[] = [
         link: "https://www.npmjs.com/package/elysia-js-cli",
         stack: ["Bun", "Elysia.js", "TypeScript"],
         thumbnail: elysiaJsCliThumb,
+    },
+    {
+        name: "Trade Journal RESTful API",
+        tagline: "Trading journal application REST API",
+        stack: ["NestJS", "Node.js", "MySQL", "TypeScript"],
+        thumbnail: tradeJournalBackend,
+    },
+    {
+        name: "Trade Journal Web Application",
+        tagline: "Trading journal web application",
+        stack: ["React.js", "Next.js", "Tailwind CSS", "TypeScript"],
+        thumbnail: tradeJournalFrontend,
     },
     {
         name: "GoParkir",
