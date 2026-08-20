@@ -1,8 +1,34 @@
 import type { ImageMetadata } from "astro";
 import tirtavaraThumb from "../assets/projects/tirtavara.webp";
-import rasaBorneoThumb from "../assets/projects/rasa-borneo.webp";
+import rasaBorneoThumb from "../assets/projects/rasaborneo.webp";
 import expressJsCliThumb from "../assets/projects/express-js-cli.webp";
 import goparkirThumb from "../assets/projects/goparkir.webp";
+import elysiaJsCliThumb from "../assets/projects/elysia-js-cli.webp";
+import rumahkodingkuThumb from "../assets/projects/rumahkodingku.webp";
+import nestjsModularMonolithStarterKitThumb from "../assets/projects/nestjs-modular-monolith.webp";
+
+export type SkillGroup = {
+    eyebrow: string;
+    title: string;
+    items: string[];
+};
+
+export type ExperienceItem = {
+    role: string;
+    org: string;
+    period: string;
+    location: string;
+    type: string;
+    bullets: string[];
+};
+
+export type ProjectItem = {
+    name: string;
+    tagline: string;
+    stack: string[];
+    link?: string;
+    thumbnail: ImageMetadata;
+};
 
 export const profile = {
     name: "Thomas Alberto",
@@ -26,12 +52,6 @@ export const stats = [
     { value: "14", label: "Police locations kept running" },
     { value: "3.86", label: "GPA, Information Systems" },
 ] as const;
-
-export type SkillGroup = {
-    eyebrow: string;
-    title: string;
-    items: string[];
-};
 
 export const skillGroups: SkillGroup[] = [
     {
@@ -77,15 +97,6 @@ export const skillGroups: SkillGroup[] = [
         items: ["Golang", "Prisma", "Rust", "Java Spring Boot"],
     },
 ];
-
-export type ExperienceItem = {
-    role: string;
-    org: string;
-    period: string;
-    location: string;
-    type: string;
-    bullets: string[];
-};
 
 export const experience: ExperienceItem[] = [
     {
@@ -156,48 +167,51 @@ export const experience: ExperienceItem[] = [
     },
 ];
 
-export type ProjectItem = {
-    name: string;
-    tagline: string;
-    period: string;
-    meta: string;
-    stack: string[];
-    link?: string;
-    thumbnail: ImageMetadata;
-};
-
 export const projects: ProjectItem[] = [
     {
         name: "Tirtavara",
         tagline: "Offline-first hydroponic farm management app",
-        period: "Jul 2026",
-        meta: "tirtavara.id",
         link: "https://tirtavara.id",
         stack: ["React Native", "Expo", "TypeScript", "NativeWind"],
         thumbnail: tirtavaraThumb,
     },
     {
+        name: "RumahKodingku",
+        tagline: "Official Website RumahKodingku",
+        link: "https://rumahkodingku.com",
+        stack: ["Next.js", "Tailwind CSS", "TypeScript"],
+        thumbnail: rumahkodingkuThumb,
+    },
+    {
+        name: "NestJS Modular Monolith Premium Starter Kit",
+        tagline: "Official Website & Web documentation for nestjs modular monolith starter kit",
+        link: "https://nestjs-modular-monolith-website.vercel.app",
+        stack: ["Next.js", "Tailwind CSS", "TypeScript", "NestJS", "Fumadocs"],
+        thumbnail: nestjsModularMonolithStarterKitThumb,
+    },
+    {
         name: "RasaBorneo",
         tagline: "Multi-merchant food ordering platform",
-        period: "Aug 2025",
-        meta: "Final project",
         stack: ["React.js", "Laravel", "MySQL", "Inertia.js"],
         thumbnail: rasaBorneoThumb,
     },
     {
         name: "Express JS CLI",
-        tagline: "Open-source RESTful API project scaffolder",
-        period: "Feb 2025",
-        meta: "1,500+ downloads on npm",
+        tagline: "Open-source RESTful API project scaffolder with Express JS Framework",
         link: "https://express-js-cli.vercel.app",
-        stack: ["Node.js", "Express.js"],
+        stack: ["Node.js", "Express.js", "JavaScript"],
         thumbnail: expressJsCliThumb,
+    },
+    {
+        name: "Elysia JS CLI",
+        tagline: "Open-source RESTful API project scaffolder with Elysia JS Framework",
+        link: "https://www.npmjs.com/package/elysia-js-cli",
+        stack: ["Bun", "Elysia.js", "TypeScript"],
+        thumbnail: elysiaJsCliThumb,
     },
     {
         name: "GoParkir",
         tagline: "Digital parking management system",
-        period: "Nov 2024",
-        meta: "1st Place — Pontianak Hackathon x 1000 Digital Startups",
         stack: ["NestJS", "Figma", "Vue.js"],
         thumbnail: goparkirThumb,
     },

@@ -11,19 +11,22 @@ export const skillIcon: Record<string, string> = {
     TypeScript: "devicon:typescript",
     PHP: "logos:php",
     "React.js": "logos:react",
-    "Next.js": "logos:nextjs",
+    "Next.js": "devicon:nextjs",
     "React Native": "devicon:reactnative",
     "Node.js": "logos:nodejs",
     "Express.js": "devicon:express",
     NestJS: "logos:nestjs",
     Laravel: "logos:laravel",
-    "Tailwind CSS": "logos:tailwindcss",
+    "Tailwind CSS": "devicon:tailwindcss",
     "Inertia.js": "thesvg-color:inertia",
     "Vue.js": "logos:vue",
+    Bun: "material-icon-theme:bun",
+    "Elysia.js": "skill-icons:elysia-dark",
+    Fumadocs: "selfhst:fumadocs",
 
     // Mobile
-    Expo: "logos:expo",
-    NativeWind: "logos:tailwindcss",
+    Expo: "devicon:expo",
+    NativeWind: "thesvg-color:nativewind",
     "Expo EAS": "logos:expo",
 
     // Backend & data
