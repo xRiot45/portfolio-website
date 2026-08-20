@@ -9,6 +9,7 @@ import Projects from '../components/react/Projects';
 import EducationCerts from '../components/react/EducationCerts';
 import ContactCTA from '../components/react/ContactCTA';
 import Footer from '../components/react/Footer';
+import Analytics from '@vercel/analytics/astro'
 ---
 
 <Layout>
@@ -23,4 +24,5 @@ import Footer from '../components/react/Footer';
 		<ContactCTA client:visible />
 	</main>
 	<Footer client:visible />
+	<Analytics />
 </Layout>
