@@ -28,11 +28,11 @@ export default function Projects() {
                     <span className="text-caption-mono animate-fade-up inline-block text-mute">04 - Projects</span>
 
                     <h2 className="text-display-lg animate-fade-up mt-2 text-ink [animation-delay:80ms]">
-                        Things I&apos;ve built.
+                        Things I&apos;ve built
                     </h2>
 
                     <p className="text-body-md animate-fade-up mt-4 text-body [animation-delay:160ms]">
-                        A selection of products, applications, and developer tools I&apos;ve worked on.
+                        A selection of products, applications, and developer tools I&apos;ve worked on
                     </p>
                 </div>
 
