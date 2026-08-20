@@ -6,8 +6,9 @@ import goparkirThumb from "../assets/projects/goparkir.webp";
 import elysiaJsCliThumb from "../assets/projects/elysia-js-cli.webp";
 import rumahkodingkuThumb from "../assets/projects/rumahkodingku.webp";
 import nestjsModularMonolithStarterKitThumb from "../assets/projects/nestjs-modular-monolith.webp";
-import tradeJournalBackend from "../assets/projects/trade-journal-backend.webp";
-import tradeJournalFrontend from "../assets/projects/trade-journal-frontend.webp";
+import tradeJournalBackendThumb from "../assets/projects/trade-journal-backend.webp";
+import tradeJournalFrontendThumb from "../assets/projects/trade-journal-frontend.webp";
+import digipagesThumb from "../assets/projects/digipages.webp";
 
 export type SkillGroup = {
     eyebrow: string;
@@ -200,7 +201,7 @@ export const projects: ProjectItem[] = [
     {
         name: "Express JS CLI",
         tagline: "Open-source RESTful API project scaffolder with Express JS Framework",
-        link: "https://express-js-cli.vercel.app",
+        link: "https://www.npmjs.com/package/express-api-cli-tool",
         stack: ["Node.js", "Express.js", "JavaScript"],
         thumbnail: expressJsCliThumb,
     },
@@ -215,19 +216,25 @@ export const projects: ProjectItem[] = [
         name: "Trade Journal RESTful API",
         tagline: "Trading journal application REST API",
         stack: ["NestJS", "Node.js", "MySQL", "TypeScript"],
-        thumbnail: tradeJournalBackend,
+        thumbnail: tradeJournalBackendThumb,
     },
     {
         name: "Trade Journal Web Application",
         tagline: "Trading journal web application",
         stack: ["React.js", "Next.js", "Tailwind CSS", "TypeScript"],
-        thumbnail: tradeJournalFrontend,
+        thumbnail: tradeJournalFrontendThumb,
     },
     {
         name: "GoParkir",
         tagline: "Digital parking management system",
         stack: ["NestJS", "Figma", "Vue.js"],
         thumbnail: goparkirThumb,
+    },
+    {
+        name: "Digipages",
+        tagline: "A mobile app for finding nearby items in our vicinity.",
+        stack: ["Figma"],
+        thumbnail: digipagesThumb,
     },
 ];
 
