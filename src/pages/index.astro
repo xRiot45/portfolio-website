@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/react/Navbar';
+import Hero from '../components/react/Hero';
+import About from '../components/react/About';
+import Skills from '../components/react/Skills';
+import ExperienceTimeline from '../components/react/ExperienceTimeline';
+import Projects from '../components/react/Projects';
+import EducationCerts from '../components/react/EducationCerts';
+import ContactCTA from '../components/react/ContactCTA';
+import Footer from '../components/react/Footer';
+---
+
+<Layout>
+	<Navbar client:load />
+	<main>
+		<Hero client:load />
+		<About client:visible />
+		<Skills client:visible />
+		<ExperienceTimeline client:visible />
+		<Projects client:visible />
+		<EducationCerts client:visible />
+		<ContactCTA client:visible />
+	</main>
+	<Footer client:visible />
+</Layout>
